@@ -26,7 +26,7 @@ namespace RootCopier
 
         private void updateGUI(int state)
         {
-            switch(state)
+            switch (state)
             {
                 case 0:
                     textBox1.Enabled = false;
@@ -60,6 +60,7 @@ namespace RootCopier
                     break;
             }
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             using (FolderBrowserDialog fbd = new FolderBrowserDialog())
@@ -80,7 +81,7 @@ namespace RootCopier
                 updateGUI(1);
         }
 
-        private static long DirSize(DirectoryInfo d)
+        private static long DirSize(DirectoryInfo d) //Recursive
         {
             long Size = 0;
             FileInfo[] fis = d.GetFiles();
@@ -90,7 +91,7 @@ namespace RootCopier
             return (Size);
         }
 
-        private void seachProcess()
+        private void seachProcess() //Non-Recursive
         {
             long rootSize = 0;
             long parsedSize = 0;
@@ -130,10 +131,11 @@ namespace RootCopier
         private async void button2_Click(object sender, EventArgs e)
         {
             progressBar1.Value = 0;
+            files.Clear();
             await Task.WhenAll(Task.Factory.StartNew(() => seachProcess()));
             label4.Text = files.Count.ToString();
             updateGUI(3);
-        }        
+        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -176,7 +178,7 @@ namespace RootCopier
             notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
             notifyIcon1.BalloonTipTitle = "Done!";
             notifyIcon1.BalloonTipText = string.Concat("Done copying: ", files.Count.ToString(), " ", textBox1.Text, " files");
-            notifyIcon1.Icon = SystemIcons.Application;           
+            notifyIcon1.Icon = SystemIcons.Application;
             notifyIcon1.ShowBalloonTip(5);
         }
     }
