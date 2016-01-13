@@ -1,0 +1,9 @@
+c:\users\davin\documents\visual studio 2013\Projects\RootCopier\RootCopier\bin\Debug\RootCopier.exe.config
+c:\users\davin\documents\visual studio 2013\Projects\RootCopier\RootCopier\bin\Debug\RootCopier.exe
+c:\users\davin\documents\visual studio 2013\Projects\RootCopier\RootCopier\bin\Debug\RootCopier.pdb
+c:\users\davin\documents\visual studio 2013\Projects\RootCopier\RootCopier\obj\Debug\RootCopier.csprojResolveAssemblyReference.cache
+c:\users\davin\documents\visual studio 2013\Projects\RootCopier\RootCopier\obj\Debug\RootCopier.Form1.resources
+c:\users\davin\documents\visual studio 2013\Projects\RootCopier\RootCopier\obj\Debug\RootCopier.Properties.Resources.resources
+c:\users\davin\documents\visual studio 2013\Projects\RootCopier\RootCopier\obj\Debug\RootCopier.csproj.GenerateResource.Cache
+c:\users\davin\documents\visual studio 2013\Projects\RootCopier\RootCopier\obj\Debug\RootCopier.exe
+c:\users\davin\documents\visual studio 2013\Projects\RootCopier\RootCopier\obj\Debug\RootCopier.pdb
